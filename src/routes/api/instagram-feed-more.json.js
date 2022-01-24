@@ -1,6 +1,6 @@
-export async function post(request) {
+export async function post({ request }) {
   try {
-    const { next } = request.body;
+    const { next } = await request.json();
     const response = await fetch(next, {
       method: 'GET',
     });
