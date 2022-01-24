@@ -107,7 +107,7 @@
   </section>
 </main>
 <footer id="footer">
-  <small>Copyright (c) 2021 Rodney Lab. All Rights Reserved.</small>
+  <small>Copyright (c) 2021–2022 Rodney Lab. All Rights Reserved.</small>
 </footer>
 
 <style>
