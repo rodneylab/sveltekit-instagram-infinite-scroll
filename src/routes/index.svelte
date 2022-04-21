@@ -35,8 +35,10 @@
     return limit < $instagram.length || next;
   }
 
+  let footer;
+
   onMount(() => {
-    if (browser && document.getElementById('footer')) {
+    if (browser) {
       const handleIntersect = (entries, observer) => {
         entries.forEach((entry) => {
           if (!morePostsAvailable()) {
@@ -45,9 +47,9 @@
           showMorePosts();
         });
       };
-      const options = { threshold: 0.25, rootMargin: '-100% 0% 100%' };
+      const options = { threshold: 0.5, rootMargin: '-100% 0% 100%' };
       const observer = new IntersectionObserver(handleIntersect, options);
-      observer.observe(document.getElementById('footer').lastElementChild);
+      observer.observe(footer);
     }
   });
 
@@ -106,17 +108,21 @@
     {/each}
   </section>
 </main>
-<footer id="footer">
+<footer bind:this={footer}>
   <small>Copyright (c) 2021–2022 Rodney Lab. All Rights Reserved.</small>
 </footer>
 
 <style>
   :global(html) {
-    font-family: 'Playfair Display';
+    font-family: Playfair Display;
     background: #e1306c;
   }
   :global(body) {
     margin: 0;
+  }
+
+  :global(:root) {
+    --font-weight-bold: 700;
   }
 
   header {
@@ -124,7 +130,7 @@
     max-width: 768rem;
     padding: 1.5rem;
     font-size: 3.052rem;
-    font-weight: 700;
+    font-weight: var(--font-weight-bold);
   }
   h1 {
     color: #ffdc80;
