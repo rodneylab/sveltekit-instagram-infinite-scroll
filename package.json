@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@fontsource/playfair-display": "^4.5.6",
-    "@rodneylab/sveltekit-components": "^0.2.11",
+    "@rodneylab/sveltekit-components": "^0.2.12",
     "@sveltejs/kit": "next",
     "dotenv": "^16.0.0",
     "eslint": "^8.13.0",
