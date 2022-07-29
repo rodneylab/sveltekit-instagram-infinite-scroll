@@ -1,4 +1,4 @@
-export async function get() {
+export async function GET() {
   try {
     const url = `https://graph.instagram.com/me/media?fields=caption,id,media_type,media_url,timestamp&access_token=${process.env['INSTAGRAM_ACCESS_TOKEN']}`;
     const response = await fetch(url, {
