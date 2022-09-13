@@ -1,31 +1,16 @@
-<script context="module">
-  export async function load({ fetch }) {
-    try {
-      const response = await fetch('/api/instagram-feed.json', {
-        method: 'GET',
-        credentials: 'same-origin',
-      });
-      return {
-        props: { data: { ...(await response.json()) } },
-      };
-    } catch (error) {
-      console.error(error);
-    }
-  }
-</script>
-
 <script>
   import instagram from '$lib/shared/stores/instagram';
   import { onMount } from 'svelte';
-  import { browser } from '$app/env';
+  import { browser } from '$app/environment';
   import '@fontsource/playfair-display/400.css';
   import '@fontsource/playfair-display/700.css';
 
+  /** @type {import('./$types').PageData} */
   export let data;
 
   const INITIAL_POSTS = 6;
 
-  const { data: feed, paging } = data;
+  const { data: feed, paging } = data.data;
   let next = paging?.next ? paging.next : null;
   instagram.set(feed);
 
@@ -103,7 +88,8 @@
           height="256"
           src={media_url}
         />
-      </article>{:else}
+      </article>
+    {:else}
       No feed images yet!
     {/each}
   </section>

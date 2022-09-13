@@ -1,3 +1,4 @@
+/** @type {import('./$types').RequestHandler} */
 export async function POST({ request }) {
   try {
     const { next } = await request.json();
@@ -7,9 +8,7 @@ export async function POST({ request }) {
 
     const data = await response.json();
 
-    return {
-      body: { ...data },
-    };
+    return new Response(JSON.stringify(data));
   } catch (err) {
     console.log('Error: ', err);
     return {
