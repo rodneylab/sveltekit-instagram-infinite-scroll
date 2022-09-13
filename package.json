@@ -1,48 +1,48 @@
 {
-  "name": "sveltekit-instagram-infinite-scroll",
-  "version": "0.0.1",
-  "license": "BSD-3-Clause",
-  "description": "SvelteKit infinite scroll: see how you can use Svelte stores and a reactive function to implement an infinite scrolling Instagram feed.",
-  "scripts": {
-    "dev": "vite dev",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --fail-on-hints",
-    "lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
-    "lint:css": "stylelint \"src/**/*.{css,svelte}\"",
-    "prettier:check": "prettier --check --plugin-search-dir=. .",
-    "format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
-  },
-  "devDependencies": {
-    "@commitlint/config-conventional": "^17.0.3",
-    "@fontsource/playfair-display": "^4.5.9",
-    "@rodneylab/sveltekit-components": "^1.0.1",
-    "@sveltejs/kit": "next",
-    "commitlint": "^17.0.3",
-    "dotenv": "^16.0.1",
-    "eslint": "^8.17.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-svelte3": "^4.0.0",
-    "husky": "^8.0.1",
-    "leaflet": "^1.8.0",
-    "postcss-html": "^1.4.1",
-    "prettier": "^2.6.2",
-    "prettier-plugin-svelte": "^2.7.0",
-    "stylelint": "^14.8.5",
-    "stylelint-config-recommended": "^9.0.0",
-    "svelte": "^3.48.0",
-    "svelte-check": "^2.7.2",
-    "vite": "^3.0.3"
-  },
-  "type": "module",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/rodneylab/sveltekit-instagram-infinite-scroll"
-  },
-  "bugs": {
-    "url": "https://github.com/rodneylab/sveltekit-instagram-infinite-scroll/issues"
-  },
-  "peerDependencies": {
-    "vite": "^3.0.3"
-  }
+	"name": "sveltekit-instagram-infinite-scroll",
+	"version": "0.0.1",
+	"license": "BSD-3-Clause",
+	"description": "SvelteKit infinite scroll: see how you can use Svelte stores and a reactive function to implement an infinite scrolling Instagram feed.",
+	"scripts": {
+		"dev": "vite dev",
+		"build": "vite build",
+		"preview": "vite preview",
+		"check": "svelte-check --fail-on-hints",
+		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
+		"lint:css": "stylelint \"src/**/*.{css,svelte}\"",
+		"prettier:check": "prettier --check --plugin-search-dir=. .",
+		"format": "prettier --ignore-path .gitignore --write --plugin-search-dir=. ."
+	},
+	"devDependencies": {
+		"@commitlint/config-conventional": "^17.0.3",
+		"@fontsource/playfair-display": "^4.5.9",
+		"@rodneylab/sveltekit-components": "^1.0.1",
+		"@sveltejs/kit": "next",
+		"commitlint": "^17.0.3",
+		"dotenv": "^16.0.1",
+		"eslint": "^8.17.0",
+		"eslint-config-prettier": "^8.5.0",
+		"eslint-plugin-svelte3": "^4.0.0",
+		"husky": "^8.0.1",
+		"leaflet": "^1.8.0",
+		"postcss-html": "^1.4.1",
+		"prettier": "^2.6.2",
+		"prettier-plugin-svelte": "^2.7.0",
+		"stylelint": "^14.8.5",
+		"stylelint-config-recommended": "^9.0.0",
+		"svelte": "^3.48.0",
+		"svelte-check": "^2.7.2",
+		"vite": "^3.0.3"
+	},
+	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/rodneylab/sveltekit-instagram-infinite-scroll"
+	},
+	"bugs": {
+		"url": "https://github.com/rodneylab/sveltekit-instagram-infinite-scroll/issues"
+	},
+	"peerDependencies": {
+		"vite": "^3.0.3"
+	}
 }
