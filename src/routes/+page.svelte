@@ -4,6 +4,7 @@
 	import { browser } from '$app/environment';
 	import '@fontsource/playfair-display/400.css';
 	import '@fontsource/playfair-display/700.css';
+	import '$lib/styles/global.css';
 
 	/** @type {import('./$types').PageData} */
 	export let data;
@@ -69,7 +70,6 @@
 
 <svelte:head>
 	<title>SvelteKit Infinite Feed Scroll</title>
-	<html lang="en-GB" />
 </svelte:head>
 
 <header>SvelteKit Infinite Scroll</header>
@@ -95,22 +95,10 @@
 	</section>
 </main>
 <footer bind:this={footer}>
-	<small>Copyright (c) 2021–2022 Rodney Lab. All Rights Reserved.</small>
+	<small>Copyright (c) 2021–2023 Rodney Lab. All Rights Reserved.</small>
 </footer>
 
 <style>
-	:global(html) {
-		font-family: Playfair Display;
-		background: #e1306c;
-	}
-	:global(body) {
-		margin: 0;
-	}
-
-	:global(:root) {
-		--font-weight-bold: 700;
-	}
-
 	header {
 		color: #ffdc80;
 		max-width: 768rem;
