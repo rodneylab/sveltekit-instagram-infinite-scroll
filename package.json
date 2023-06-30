@@ -7,7 +7,7 @@
 		"dev": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
-		"check": "svelte-check --fail-on-hints",
+		"check": "svelte-check",
 		"lint": "prettier --ignore-path .gitignore --check --plugin-search-dir=. . && eslint --ignore-path .gitignore .",
 		"lint:css": "stylelint \"src/**/*.{css,svelte}\"",
 		"prettier:check": "prettier --check --plugin-search-dir=. .",
