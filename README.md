@@ -11,7 +11,7 @@
 
 # sveltekit-instagram-infinite-scroll
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-infinite-scroll)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/rodneylab/sveltekit-instagram-infinite-scroll)
 
 SvelteKit demo code for implementing an infinite scrolling feed in SvelteKit. The code accompanies the <a aria-label="Open Rodney Lab blog post on Svelte Kit Graph Q L queries with fetch only" href="https://rodneylab.com/sveltekit-infinite-scroll/">post on SvelteKit infinite scroll</a>. If you have any questions, please drop a comment at the bottom of that page.
 
