@@ -5,6 +5,7 @@
 	"description": "SvelteKit infinite scroll: see how you can use Svelte stores and a reactive function to implement an infinite scrolling Instagram feed.",
 	"scripts": {
 		"dev": "vite dev",
+		"start": "vite dev",
 		"build": "vite build",
 		"preview": "vite preview",
 		"check": "svelte-check",
