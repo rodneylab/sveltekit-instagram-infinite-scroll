@@ -10,6 +10,6 @@ export async function POST({ request }) {
 		return new Response(JSON.stringify(data));
 	} catch (err) {
 		console.log('Error: ', err);
-		throw error(500, 'Error retrieving data in /api.instagram-feed-more.json');
+		error(500, 'Error retrieving data in /api.instagram-feed-more.json');
 	}
 }
