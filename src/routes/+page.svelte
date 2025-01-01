@@ -7,15 +7,15 @@
 	import '$lib/styles/global.css';
 
 	/** @type {import('./$types').PageData} */
-	export let data;
+	let { data } = $props();
 
 	const INITIAL_POSTS = 6;
 
 	const { data: feed, paging } = data.data;
-	let next = paging?.next ? paging.next : null;
+	let next = $state(paging?.next ? paging.next : null);
 	instagram.set(feed);
 
-	let limit = INITIAL_POSTS;
+	let limit = $state(INITIAL_POSTS);
 
 	function morePostsAvailable() {
 		return limit < $instagram.length || next;
@@ -39,7 +39,6 @@
 		}
 	});
 
-	$: showMorePosts;
 	async function showMorePosts() {
 		try {
 			const newLimit = limit + 6;
@@ -63,7 +62,7 @@
 				limit = newLimit;
 			}
 		} catch (error) {
-			console.error('Error fetching more posts in index');
+			console.error(`Error fetching more posts in index: ${error}`);
 		}
 	}
 </script>
@@ -95,7 +94,7 @@
 	</section>
 </main>
 <footer bind:this={footer}>
-	<small>Copyright (c) 2021–2023 Rodney Lab. All Rights Reserved.</small>
+	<small>Copyright (c) 2021&thinsp;&ndash;&thinsp;2025 Rodney Lab. All Rights Reserved.</small>
 </footer>
 
 <style>
