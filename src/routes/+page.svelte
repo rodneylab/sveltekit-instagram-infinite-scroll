@@ -11,9 +11,11 @@
 
 	const INITIAL_POSTS = 6;
 
-	const { data: feed, paging } = data.data;
-	let next = $state(paging?.next ? paging.next : null);
-	instagram.set(feed);
+	const { data: feed, paging } = $derived(data.data);
+	let next = $derived(paging?.next ? paging.next : null);
+	$effect(() => {
+		instagram.set(feed);
+	});
 
 	let limit = $state(INITIAL_POSTS);
 
